@@ -1,0 +1,464 @@
+{
+  "version": 3,
+  "pages404": true,
+  "appType": "app",
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/api/dramabox/allepisode/[bookId]",
+      "regex": "^/api/dramabox/allepisode/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPbookId": "nxtPbookId"
+      },
+      "namedRegex": "^/api/dramabox/allepisode/(?<nxtPbookId>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/dramabox/detail/[bookId]",
+      "regex": "^/api/dramabox/detail/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPbookId": "nxtPbookId"
+      },
+      "namedRegex": "^/api/dramabox/detail/(?<nxtPbookId>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/detail/dramabox/[bookId]",
+      "regex": "^/detail/dramabox/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPbookId": "nxtPbookId"
+      },
+      "namedRegex": "^/detail/dramabox/(?<nxtPbookId>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/detail/flickreels/[bookId]",
+      "regex": "^/detail/flickreels/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPbookId": "nxtPbookId"
+      },
+      "namedRegex": "^/detail/flickreels/(?<nxtPbookId>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/detail/freereels/[bookId]",
+      "regex": "^/detail/freereels/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPbookId": "nxtPbookId"
+      },
+      "namedRegex": "^/detail/freereels/(?<nxtPbookId>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/detail/melolo/[bookId]",
+      "regex": "^/detail/melolo/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPbookId": "nxtPbookId"
+      },
+      "namedRegex": "^/detail/melolo/(?<nxtPbookId>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/detail/netshort/[shortPlayId]",
+      "regex": "^/detail/netshort/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPshortPlayId": "nxtPshortPlayId"
+      },
+      "namedRegex": "^/detail/netshort/(?<nxtPshortPlayId>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/detail/reelshort/[bookId]",
+      "regex": "^/detail/reelshort/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPbookId": "nxtPbookId"
+      },
+      "namedRegex": "^/detail/reelshort/(?<nxtPbookId>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/invoice/[reference]",
+      "regex": "^/invoice/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPreference": "nxtPreference"
+      },
+      "namedRegex": "^/invoice/(?<nxtPreference>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/watch/dramabox/[bookId]",
+      "regex": "^/watch/dramabox/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPbookId": "nxtPbookId"
+      },
+      "namedRegex": "^/watch/dramabox/(?<nxtPbookId>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/watch/flickreels/[bookId]/[videoId]",
+      "regex": "^/watch/flickreels/([^/]+?)/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPbookId": "nxtPbookId",
+        "nxtPvideoId": "nxtPvideoId"
+      },
+      "namedRegex": "^/watch/flickreels/(?<nxtPbookId>[^/]+?)/(?<nxtPvideoId>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/watch/freereels/[bookId]",
+      "regex": "^/watch/freereels/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPbookId": "nxtPbookId"
+      },
+      "namedRegex": "^/watch/freereels/(?<nxtPbookId>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/watch/freereels/[bookId]/[episodeId]",
+      "regex": "^/watch/freereels/([^/]+?)/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPbookId": "nxtPbookId",
+        "nxtPepisodeId": "nxtPepisodeId"
+      },
+      "namedRegex": "^/watch/freereels/(?<nxtPbookId>[^/]+?)/(?<nxtPepisodeId>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/watch/melolo/[bookId]/[videoId]",
+      "regex": "^/watch/melolo/([^/]+?)/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPbookId": "nxtPbookId",
+        "nxtPvideoId": "nxtPvideoId"
+      },
+      "namedRegex": "^/watch/melolo/(?<nxtPbookId>[^/]+?)/(?<nxtPvideoId>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/watch/netshort/[shortPlayId]",
+      "regex": "^/watch/netshort/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPshortPlayId": "nxtPshortPlayId"
+      },
+      "namedRegex": "^/watch/netshort/(?<nxtPshortPlayId>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/watch/reelshort/[bookId]",
+      "regex": "^/watch/reelshort/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPbookId": "nxtPbookId"
+      },
+      "namedRegex": "^/watch/reelshort/(?<nxtPbookId>[^/]+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/admin/dashboard",
+      "regex": "^/admin/dashboard(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/dashboard(?:/)?$"
+    },
+    {
+      "page": "/admin/login",
+      "regex": "^/admin/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/login(?:/)?$"
+    },
+    {
+      "page": "/admin/plans",
+      "regex": "^/admin/plans(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/plans(?:/)?$"
+    },
+    {
+      "page": "/api/admin/auth",
+      "regex": "^/api/admin/auth(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/auth(?:/)?$"
+    },
+    {
+      "page": "/api/admin/plans",
+      "regex": "^/api/admin/plans(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/plans(?:/)?$"
+    },
+    {
+      "page": "/api/admin/users",
+      "regex": "^/api/admin/users(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/users(?:/)?$"
+    },
+    {
+      "page": "/api/auth/login",
+      "regex": "^/api/auth/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/auth/login(?:/)?$"
+    },
+    {
+      "page": "/api/auth/logout",
+      "regex": "^/api/auth/logout(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/auth/logout(?:/)?$"
+    },
+    {
+      "page": "/api/dramabox/dubindo",
+      "regex": "^/api/dramabox/dubindo(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/dramabox/dubindo(?:/)?$"
+    },
+    {
+      "page": "/api/dramabox/foryou",
+      "regex": "^/api/dramabox/foryou(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/dramabox/foryou(?:/)?$"
+    },
+    {
+      "page": "/api/dramabox/latest",
+      "regex": "^/api/dramabox/latest(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/dramabox/latest(?:/)?$"
+    },
+    {
+      "page": "/api/dramabox/search",
+      "regex": "^/api/dramabox/search(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/dramabox/search(?:/)?$"
+    },
+    {
+      "page": "/api/dramabox/trending",
+      "regex": "^/api/dramabox/trending(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/dramabox/trending(?:/)?$"
+    },
+    {
+      "page": "/api/flickreels/detail",
+      "regex": "^/api/flickreels/detail(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/flickreels/detail(?:/)?$"
+    },
+    {
+      "page": "/api/flickreels/foryou",
+      "regex": "^/api/flickreels/foryou(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/flickreels/foryou(?:/)?$"
+    },
+    {
+      "page": "/api/flickreels/hotrank",
+      "regex": "^/api/flickreels/hotrank(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/flickreels/hotrank(?:/)?$"
+    },
+    {
+      "page": "/api/flickreels/latest",
+      "regex": "^/api/flickreels/latest(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/flickreels/latest(?:/)?$"
+    },
+    {
+      "page": "/api/flickreels/search",
+      "regex": "^/api/flickreels/search(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/flickreels/search(?:/)?$"
+    },
+    {
+      "page": "/api/freereels/anime",
+      "regex": "^/api/freereels/anime(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/freereels/anime(?:/)?$"
+    },
+    {
+      "page": "/api/freereels/detail",
+      "regex": "^/api/freereels/detail(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/freereels/detail(?:/)?$"
+    },
+    {
+      "page": "/api/freereels/foryou",
+      "regex": "^/api/freereels/foryou(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/freereels/foryou(?:/)?$"
+    },
+    {
+      "page": "/api/freereels/home",
+      "regex": "^/api/freereels/home(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/freereels/home(?:/)?$"
+    },
+    {
+      "page": "/api/freereels/search",
+      "regex": "^/api/freereels/search(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/freereels/search(?:/)?$"
+    },
+    {
+      "page": "/api/melolo/detail",
+      "regex": "^/api/melolo/detail(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/melolo/detail(?:/)?$"
+    },
+    {
+      "page": "/api/melolo/latest",
+      "regex": "^/api/melolo/latest(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/melolo/latest(?:/)?$"
+    },
+    {
+      "page": "/api/melolo/search",
+      "regex": "^/api/melolo/search(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/melolo/search(?:/)?$"
+    },
+    {
+      "page": "/api/melolo/stream",
+      "regex": "^/api/melolo/stream(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/melolo/stream(?:/)?$"
+    },
+    {
+      "page": "/api/melolo/trending",
+      "regex": "^/api/melolo/trending(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/melolo/trending(?:/)?$"
+    },
+    {
+      "page": "/api/netshort/detail",
+      "regex": "^/api/netshort/detail(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/netshort/detail(?:/)?$"
+    },
+    {
+      "page": "/api/netshort/foryou",
+      "regex": "^/api/netshort/foryou(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/netshort/foryou(?:/)?$"
+    },
+    {
+      "page": "/api/netshort/search",
+      "regex": "^/api/netshort/search(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/netshort/search(?:/)?$"
+    },
+    {
+      "page": "/api/netshort/theaters",
+      "regex": "^/api/netshort/theaters(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/netshort/theaters(?:/)?$"
+    },
+    {
+      "page": "/api/payment/channels",
+      "regex": "^/api/payment/channels(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/payment/channels(?:/)?$"
+    },
+    {
+      "page": "/api/payment/check",
+      "regex": "^/api/payment/check(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/payment/check(?:/)?$"
+    },
+    {
+      "page": "/api/payment/create",
+      "regex": "^/api/payment/create(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/payment/create(?:/)?$"
+    },
+    {
+      "page": "/api/payment/detail",
+      "regex": "^/api/payment/detail(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/payment/detail(?:/)?$"
+    },
+    {
+      "page": "/api/plans",
+      "regex": "^/api/plans(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/plans(?:/)?$"
+    },
+    {
+      "page": "/api/proxy/video",
+      "regex": "^/api/proxy/video(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/proxy/video(?:/)?$"
+    },
+    {
+      "page": "/api/reelshort/detail",
+      "regex": "^/api/reelshort/detail(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/reelshort/detail(?:/)?$"
+    },
+    {
+      "page": "/api/reelshort/homepage",
+      "regex": "^/api/reelshort/homepage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/reelshort/homepage(?:/)?$"
+    },
+    {
+      "page": "/api/reelshort/search",
+      "regex": "^/api/reelshort/search(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/reelshort/search(?:/)?$"
+    },
+    {
+      "page": "/api/reelshort/watch",
+      "regex": "^/api/reelshort/watch(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/reelshort/watch(?:/)?$"
+    },
+    {
+      "page": "/buy",
+      "regex": "^/buy(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/buy(?:/)?$"
+    },
+    {
+      "page": "/buy/checkout",
+      "regex": "^/buy/checkout(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/buy/checkout(?:/)?$"
+    },
+    {
+      "page": "/login",
+      "regex": "^/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/login(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

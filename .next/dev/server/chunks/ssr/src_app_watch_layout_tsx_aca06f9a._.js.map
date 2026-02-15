@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///home/shn/workspace/SekaiDrama/src/app/watch/layout.tsx"],"sourcesContent":["// Custom layout for watch pages - no global Header/Footer\r\n// This overrides the root layout for /watch/* routes to provide immersive video experience\r\n\r\nexport default function WatchLayout({\r\n  children,\r\n}: {\r\n  children: React.ReactNode;\r\n}) {\r\n  // Just render children directly without Header/Footer wrapper\r\n  // The watch pages have their own custom headers built-in\r\n  return <>{children}</>;\r\n}\r\n"],"names":[],"mappings":"AAAA,0DAA0D;AAC1D,2FAA2F;;;;;;;AAE5E,SAAS,YAAY,EAClC,QAAQ,EAGT;IACC,8DAA8D;IAC9D,yDAAyD;IACzD,qBAAO;kBAAG;;AACZ"}}]
+}

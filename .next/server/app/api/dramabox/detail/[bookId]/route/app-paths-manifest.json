@@ -1,0 +1,3 @@
+{
+  "/api/dramabox/detail/[bookId]/route": "app/api/dramabox/detail/[bookId]/route.js"
+}
